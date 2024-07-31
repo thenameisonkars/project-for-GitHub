@@ -1,1 +1,4 @@
-this is dockerfile created just for understanding how to push files from terminal
+FROM python:3.9-slim
+WORKDIR /app
+COPY . /app
+CMD ["python", "hello.py"]
